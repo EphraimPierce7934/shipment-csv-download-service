@@ -1,0 +1,20 @@
+{
+  "name": "shipment-csv-download-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/shipment_export_route.ts",
+    "demo": "tsx scripts/export_sample.ts",
+    "test": "tsx --test test/shipment_export.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

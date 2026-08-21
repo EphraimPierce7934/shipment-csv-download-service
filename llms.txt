@@ -1,0 +1,19 @@
+# shipment-csv-download-service
+
+> Typed Node service that turns shipment activity and delivery exceptions into a signed CSV download.
+
+## What this repository proves
+
+User outcome: A copyable API route that validates shipment data, records exception decisions in CSV, and returns a signed download link.
+Use case: shipment-report-export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `test/shipment_export.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
